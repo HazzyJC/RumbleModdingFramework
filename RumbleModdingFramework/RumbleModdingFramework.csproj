@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{A54BEB42-9D4C-420F-9109-2C7FB3B509E5}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>RumbleModdingFramework</RootNamespace>
+        <AssemblyName>RumbleModdingFramework</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Accessibility">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\Accessibility.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="BucketheadEntertainment.Plugins">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\BucketheadEntertainment.Plugins.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="MelonLoader">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\MelonLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="RUMBLE.Runtime">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\RUMBLE.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="SMDiagnostics">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\SMDiagnostics.dll</HintPath>
+        </Reference>
+        <Reference Include="System">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\System.dll</HintPath>
+        </Reference>
+        <Reference Include="UnhollowerBaseLib">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.InputSystem">
+          <HintPath>P:\Downloads\Unity.InputSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AccessibilityModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AndroidJNIModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ARModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ARModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClothModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ClothModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterInputModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterRendererModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CrashReportingModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.DirectorModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.DirectorModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.DSPGraphModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GameCenterModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GIModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.GIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GridModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.GridModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.HotReloadModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Il2CppImageConversionManager">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.InputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.JSONSerializeModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.LocalizationModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.NVIDIAModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ParticleSystemModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PerformanceReportingModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ProfilerModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ScreenCaptureModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SharedInternalsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpatialTracking">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SpatialTracking.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteMaskModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteShapeModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.StreamingModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.StreamingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SubstanceModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SubsystemsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TerrainModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainPhysicsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextCoreFontEngineModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextCoreTextEngineModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TilemapModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TilemapModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TLSModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.TLSModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIElementsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIElementsNativeModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UmbraModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UmbraModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UNETModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UNETModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityAnalyticsModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityConnectModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityCurlModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityTestProtocolModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VehiclesModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VFXModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.VFXModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VideoModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.VideoModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VirtualTexturingModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VRModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WindModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.WindModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.XRModule">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="ValueTupleBridge">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\ValueTupleBridge.dll</HintPath>
+        </Reference>
+        <Reference Include="WindowsBase">
+          <HintPath>..\..\..\..\Hazzy The Editor\New folder\steamapps\common\RUMBLE\MelonLoader\Managed\WindowsBase.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Assetloading\AssetBundle.cs" />
+        <Compile Include="Assetloading\AssetLoader.cs" />
+        <Compile Include="Assetloading\EmbeddedAssetBundle.cs" />
+        <Compile Include="ObjectScript.cs" />
+        <Compile Include="ReflectionUtil.cs" />
+        <Compile Include="RMFMain.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="VrMenu.cs" />
+        <Compile Include="VrMenuButton.cs" />
+        <Compile Include="VrMenuPage.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Directory.Build.props" />
+      <Content Include="Directory.Build.targets" />
+      <Content Include="MakeRelease.ps1" />
+      <EmbeddedResource Include="Resources\vrmenu.vm" />
+      <Content Include="Resources\select.wav" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
