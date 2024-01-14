@@ -6,6 +6,7 @@ using RumbleModdingFramework.AssetLoading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
+using UnityEngine.Events;
 
 namespace RumbleModdingFramework
 {
@@ -44,14 +45,14 @@ namespace RumbleModdingFramework
         private static InputAction leftJoystick = xrmap.AddAction("Left Controller Primary Joystick");
         private static InputAction leftSecondary = xrmap.AddAction("Left Controller Secondary Button");
         private static InputAction leftTrigger = xrmap.AddAction("Left Controller Trigger Button");
-        
+
+        public static UnityEvent RMFInitialized;
 
 
-        /*public override void OnLateInitializeMelon()
-        {   
-            RMFCat = MelonPreferences.CreateCategory("RMFcat");
-            ConfigRMF = RMFCat.CreateEntry("Config", false);
-        }*/
+        public override void OnLateInitializeMelon()
+        {
+            RMFInitialized = new UnityEvent();
+        }
         
 
         private bool ran;
@@ -136,6 +137,7 @@ namespace RumbleModdingFramework
                 AssetLoader.menu.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 isUIactive = false;
                 initDone = true;
+                RMFInitialized.Invoke();
             }
         }
 
